@@ -1,0 +1,50 @@
+.word-panel{
+    border-radius: 10px;
+    border: 1px solid #444;
+    padding: 0.5em 1em;
+    text-align: center;
+    word-break: break-all;
+    background-color: rgba(0, 0, 0, 0.918);
+    min-height: 100px;
+    margin: 7px 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 12px;
+    height: 140px;
+    .wordItem {
+        // padding: 5px 0;
+        width: 50px;
+        height: 25px;
+    }
+}
+
+.btn-word{
+    background-color: transparent;
+    padding: 4px 8px;
+    cursor: pointer;
+    margin: 4px;
+    border-radius: 5px;
+    border: none;
+    color: #7a4c16;
+    font-size: 14px;
+    user-select: none;
+    &.active{
+        background-color: #7a4c16;
+        color: white;
+    }
+    &:hover{
+        background-color: #5f3d16;
+        color: white;
+    }
+}
+
+.seed {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 12px;
+}
+
+.seedItem {
+    padding: 5px 0;
+}

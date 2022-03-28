@@ -1,0 +1,98 @@
+.activity {
+    border-radius: 5px;
+    width: 100%;
+    min-height: 86px;
+    margin: 0;
+    margin-top: 10px;
+    background: #020001;
+    opacity: 67%;
+    padding: 24px 16px;
+    font-size: 1rem;
+    font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 140%;
+    font-style: normal;
+    font-weight: normal;
+    border-top: 1px solid var(--mercury);
+    border-bottom: 1px solid var(--mercury);
+    color: var(--Black-100);
+    display: grid;
+    grid-template-columns: 0fr repeat(11, 1fr);
+    grid-template-areas:
+        "icon head head head head head head head right right right right"
+        "icon sub sub sub sub sub sub sub right right right right"
+        ". actions actions actions actions actions actions actions right right right right";
+    align-items: start;
+    cursor: pointer;
+
+    .list-item__icon {
+        grid-area: icon;
+        align-self: center;
+        * {
+            margin: 0 16px 0 0;
+        }
+    }
+    .list-item__heading {
+        font-size: 1rem;
+        font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+        line-height: 140%;
+        font-style: normal;
+        font-weight: normal;
+        grid-area: head;
+        position: relative;
+        display: flex;
+        align-items: center;
+        .list-item__title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        h2 {
+            margin: 0;
+        }
+    }
+    .list-item__subheading {
+        font-size: 0.75rem;
+        font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+        line-height: 140%;
+        font-style: normal;
+        font-weight: normal;
+        grid-area: sub;
+        color: var(--Grey-500);
+        margin-top: 4px;
+        div{
+            color: #219e37
+        }
+        h3 {
+            margin: 0;
+            font-size: 12px;
+            overflow: visible;
+            display: flex;
+            white-space: nowrap;
+            text-overflow: initial;
+        }
+    }
+    .list-item__right-content {
+        grid-area: right;
+        text-align: right;
+        align-items: flex-end;
+        overflow: hidden;
+        white-space: nowrap;
+        h2, h3 {
+            margin: 0;
+        }
+        .transaction-list-item__primary-currency {
+            color: var(--Black-100);
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .transaction-list-item__secondary-currency {
+            font-size: 0.75rem;
+            font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+            line-height: 140%;
+            font-style: normal;
+            font-weight: normal;
+            margin-top: 4px;
+            color: var(--Grey-500);
+        }
+    }
+}

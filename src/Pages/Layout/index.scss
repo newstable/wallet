@@ -1,0 +1,262 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 1rem;
+  margin: auto;
+  .logoName {
+    width: 70px;
+    height: 30px;
+  }
+
+  .network {
+    height: 35px;
+    border-radius: 20px;
+    width: 150px;
+    text-align: center;
+    border: 1px solid #614623;
+    background-color: #060000;
+    cursor: pointer;
+    color: white;
+    :after {
+      justify-self: end;
+    }
+  }
+
+  .avatar {
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #614623;
+  }
+  .avatar_png {
+    background-image: url("../../assets/img/avatar.png");
+    background-size: 100% 100%;
+  }
+}
+
+.headerWrap {
+  overflow: auto;
+  position: relative;
+}
+
+.account-div {
+  z-index: 100;
+  position: absolute;
+  top: 65px;
+  left: 18px;
+  width: 320px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: rgb(0 0 0 / 15%) 0 2px 2px 2px;
+  background-color: black;
+  opacity: 92%;
+  border-radius: 5px;
+  border: 1px solid #ab772b;
+  .active {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .account-menu__header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .account-menu__item {
+    padding: 14px;
+  }
+  .account-menu__lock-button {
+    font-size: 0.75rem;
+    font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 140%;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    border: 1px solid var(--ui-white);
+    background-color: transparent;
+    padding: 3.5px 5px;
+    color: #fff;
+    width: 59px;
+  }
+  .btn--rounded.btn-default {
+    border: 1px solid #6a737d;
+  }
+  .btn--rounded {
+    border-radius: 100px;
+    will-change: box-shadow;
+    transition: box-shadow cubic-bezier(0.6, -0.28, 0.735, 0.045) 200ms;
+  }
+  .account-menu__divider {
+    background-color: #ab772b;
+    width: 100%;
+    height: 1px;
+  }
+
+  .account-container {
+    cursor: pointer;
+    position: relative;
+    max-height: 228px;
+    &:hover {
+      background-color: rgba(94, 92, 92, 0.418);
+    }
+    .account-item {
+      display: flex;
+      flex-flow: row nowrap;
+      padding: 12px 14px;
+      .account-check-mark {
+        width: 14px;
+        margin-right: 12px;
+        flex: 0 0 auto;
+      }
+      .account-avatar {
+        margin-right: 12px;
+      }
+      .account-menu__account-info {
+        display: flex;
+        flex: 1 0 auto;
+        flex-flow: column nowrap;
+        .account-menu__name {
+          font-size: 1.125rem;
+          font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+          line-height: 140%;
+          font-style: normal;
+          font-weight: normal;
+          color: var(--white);
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          max-width: 200px;
+        }
+        .currency-display-component {
+          display: flex;
+          align-items: center;
+        }
+        .account-menu__balance {
+          font-size: 0.875rem;
+          font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+          line-height: 140%;
+          font-style: normal;
+          font-weight: normal;
+          color: #9b9b9b;
+          .currency-display-component__text {
+            direction: ltr;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .currency-display-component__suffix {
+            padding-left: 4px;
+          }
+        }
+      }
+      .keyring-label {
+        font-size: 0.5rem;
+        font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+        line-height: 140%;
+        font-style: normal;
+        font-weight: normal;
+        z-index: 1;
+        border-radius: 10px;
+        padding: 4px;
+        text-align: center;
+        height: 15px;
+        margin-top: 5px;
+        margin-right: 10px;
+        background-color: #9b9b9b;
+        color: black;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+        display: flex;
+        align-items: center;
+      }
+      .icon-border {
+        border-radius: 50%;
+        border: 1px solid #f2f3f4;
+        background: #f2f3f4;
+        display: flex;
+        justify-content: center;
+        color: #24292e;
+        align-items: center;
+        overflow: hidden;
+      }
+    }
+  }
+  .account-menu__item--clickable {
+    cursor: pointer;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    z-index: 201;
+    padding: 14px;
+    &:hover {
+      background-color: rgba(94, 92, 92, 0.418);
+    }
+    .account-menu__item__icon {
+      height: 16px;
+      width: 16px;
+      margin-right: 14px;
+      display: flex;
+    }
+    .account-menu__item__text {
+      font-size: 1rem;
+      font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 140%;
+      font-style: normal;
+      font-weight: normal;
+      div {
+        color: white;
+      }
+    }
+  }
+}
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: orange;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 0;
+  border: 0px solid orange;
+}
+
+.unlockBack {
+  background-image: url("../../assets/img/main_back.png");
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+}
+.click {
+  cursor: pointer !important;
+  background-color: orange;
+  color: black;
+}
+.cursor_1 {
+  cursor: pointer !important;
+}
+.noClick {
+  cursor: pointer !important;
+  color: white !important;
+}

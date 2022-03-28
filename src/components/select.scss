@@ -1,0 +1,35 @@
+.dropdown {
+    font-size: 1rem;
+    font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 140%;
+    font-style: normal;
+    font-weight: normal;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 6px;
+    background-image: url("../assets/img/right-arrow.png");
+    background-size: 10px 10px;
+    background-repeat: no-repeat, repeat;
+    background-position: right 12px top 50%;
+    padding: 8px 32px 8px 16px;
+    position: absolute;
+    left: 0;
+    background-color: black;
+    border-radius: 5px;
+    border: none !important;
+    box-shadow: 1px 1px 15px #745120;
+    color: white;
+    &:focus-visible {
+        outline: none;
+    }
+    option {
+        color: white;
+    }
+}
+.selectbox-container {
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}

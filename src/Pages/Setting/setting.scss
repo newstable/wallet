@@ -1,0 +1,178 @@
+.setting-landing {
+    .setting-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1 {
+            margin: 5px 0;
+        }
+    }
+    .landing-content {
+        .tab {
+            display: flex;
+            justify-content: flex-start;
+            padding: 15px 1em;
+            a {
+                display: flex;
+                justify-content: flex-start;
+            }
+            .tab-content {
+                width: 310px;
+                .title {
+                    margin: 0 0 5px;
+                }
+                .content {
+                    font-size: 0.875rem;
+                    font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+                    line-height: 140%;
+                    font-style: normal;
+                    font-weight: normal;
+                    display: block;
+                    font-weight: 300;
+                    margin-top: 8px;
+                    min-height: 14px;
+                }
+            }
+            .tab-caret {
+                img {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+}
+
+.setting-general {
+    .general-content {
+        .general-content-item {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+            height: initial;
+            padding: 5px 0px;
+            .general-content-description {
+                font-size: 0.875rem;
+                font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+                line-height: 140%;
+                font-style: normal;
+                font-weight: normal;
+                color: #9b9b9b;
+                padding-top: 5px;
+            }
+            .radio-group {
+                display: flex;
+                align-items: center;
+                margin-right: 16px;
+                .radio-label {
+                    padding-left: 4px;
+                }
+            }
+        }
+    }        
+}
+
+.sucess-button {
+    background-color: #230603;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px #e6a54b;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #e9ad56;
+    padding: 4px 1em 7px;
+    border: 1px solid #e9ad56;
+    transition: 0.3s;
+    padding: 10px 0;
+}
+
+.save-button {
+    // float: right;
+    margin-bottom: 30px;
+    height: 35px;
+    width: 60px;
+    background-color: #230603;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px #e6a54b;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #e9ad56;
+    border: 1px solid #e9ad56;
+    transition: 0.3s;
+}
+
+.link-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    a {
+        color: #037dd6;
+        &:hover {
+            color: #037dd6;
+        }
+    }
+}
+.m-b {
+    width: 100px;
+    border: 0.5px solid #e9ad56;
+    margin: 20px 0;
+}
+
+.network-setting {
+    margin-top: 20px;
+    .button-group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+}
+
+.contacts-container {
+    display: flex;
+    .contacts-content {
+        width: 50%;
+        .recent {
+            font-size: 0.725rem;
+            font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+            line-height: 140%;
+            font-style: normal;
+            font-weight: normal;
+            color: #535a61;
+            padding: 0.5rem  0;
+            border-bottom: 1px solid #e6a54b;
+        }
+        .contacts-group {
+            .contacts-item {
+                display: flex;
+                align-items: center;
+                padding: 7px 0;
+                border-bottom: 1px solid #e6a54b;
+            }
+            .item-name {
+                font-size: 0.875rem;
+                font-family: Euclid, Roboto, Helvetica, Arial, sans-serif;
+                line-height: 140%;
+                font-style: normal;
+                font-weight: normal;
+                max-width: 20em;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                color: white;
+                margin-left: 10px;
+            }
+        }
+    }
+    .contacts-detail {
+        width: 50%;
+        padding: 10px 15px;
+    }
+}
+
+.alert-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}

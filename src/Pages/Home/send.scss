@@ -1,0 +1,113 @@
+.send-amount {
+    background-color: black;
+    border-radius: 5px;
+    border: none !important;
+    box-shadow: 1px 1px 15px #745120;
+    padding: 5px 10px !important;
+    font-size: 1.1em;
+    color: #f7d18b !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    img {
+        &:nth-child(1) {
+            width: 20px;
+            height: 20px;
+        }
+        &:nth-child(2) {
+            width: 20px;
+        }
+    }
+    input {
+        font-size: 0.8em;
+        color: white;
+        background-color: black;
+        border: none;
+        padding: 0px 10px;
+        width: 220px;
+    }
+    
+}
+.send-main {
+    .send-v2__form-row {
+        margin: 1rem 0;
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        flex: 1 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        .asset-input {
+            height: 50px;
+            width: 200px;
+            display: flex;
+            background-color: black;
+            justify-content: space-around;
+            align-items: center;
+            .asset-input-icon {
+                width: 36px;
+                border-radius: 18px;
+                border: 1px solid;
+                height: 36px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    height: 30px;
+                }
+            }
+            .arrow {
+                width: 8px;
+                transform: rotate(90deg);
+                margin-right: 5px;
+            }
+            .amount-input {
+                margin-right: 4px;
+                height: 20px;
+                width: 1ch;
+                font-size: 15px;
+                max-width: 17ch;
+                padding: 0;
+                background-color: black;
+                border: none;
+                color: white;
+            }
+        }
+        .select-coin {
+            position: absolute;
+            top: 55px;
+            right: 0;
+            z-index: 999;
+            display: block;
+            background-color: black;
+            opacity: 99%;
+            height: 150px;
+            overflow: auto;
+            border: 1px solid #ab772b;
+            border-radius: 10px;
+        }
+    }
+}
+
+.send-foot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 100%;
+    .btn-puc {
+        padding: 4px 2em 7px;
+        color: #e9ad56 !important;
+    }
+    .btn-puc-cancel {
+        background-color: #0a0603;
+        box-shadow: none;
+        border: 1px solid #e9ad56;
+        color: #989897 ;
+    }
+}
+.account-menu__divider {
+    background-color: #ab772b;
+    width: 100%;
+    height: 1px;
+}
